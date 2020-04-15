@@ -16,3 +16,17 @@ fraudulentOrderIDs[0] = "F000";
 Console.WriteLine($"Reassing First: {fraudulentOrderIDs[0]}");
 
 Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
+
+// foreach statement
+
+int[] inventory = { 200, 450, 700, 175, 250 };
+int sum = 0;
+int bin = 0;
+foreach (int items in inventory)
+{
+    sum += items;
+    bin++;
+    Console.WriteLine($"Bin {bin} = {items} items (Running tally: {sum})");;
+}
+
+Console.WriteLine($"We have {sum} items in inventory.");
